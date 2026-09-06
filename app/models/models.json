@@ -1,0 +1,60 @@
+{
+  "models": [
+    {
+      "name": "fakespot-ai/roberta-base-ai-text-detection-v1",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "RoBERTa-based model for detecting AI-generated English text.",
+      "language": ["en"],
+      "recommended": true
+    },
+    {
+      "name": "Oxidane/tmr-ai-text-detector",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "RoBERTa-based AI-generated text detector trained on RAID data.",
+      "language": ["en"],
+      "recommended": true
+    },
+    {
+      "name": "adaptive-classifier/ai-detector",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "Binary classifier for distinguishing human-written and AI-generated or edited text.",
+      "language": ["en"],
+      "recommended": true
+    },
+    {
+      "name": "coai/roberta-ai-detector-v2",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "RoBERTa-based detector for AI-generated text.",
+      "language": ["en"],
+      "recommended": false
+    },
+    {
+      "name": "desklib/ai-text-detector-v1.01",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "DeBERTa-based model for AI-generated text detection.",
+      "language": ["en"],
+      "recommended": false
+    },
+    {
+      "name": "bibbbu/multilingual-ai-human-detector_xlm-roberta-base",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "XLM-RoBERTa-based detector designed for multilingual AI and human text classification.",
+      "language": ["multilingual"],
+      "recommended": false
+    },
+    {
+      "name": "yaya36095/xlm-roberta-text-detector",
+      "provider": "huggingface",
+      "task": "text-classification",
+      "description": "XLM-RoBERTa-based multilingual text detector.",
+      "language": ["multilingual"],
+      "recommended": false
+    }
+  ]
+}

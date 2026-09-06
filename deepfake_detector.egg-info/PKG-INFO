@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: deepfake-detector
+Version: 0.1.0
+Summary: Multimodal Deepfake Detection Application
+Requires-Python: >=3.10
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: python-multipart
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: langchain
+Requires-Dist: langchain-core
+Requires-Dist: langchain-community
+Requires-Dist: langchain-huggingface
+Requires-Dist: python-docx
+Requires-Dist: pypdf
+Requires-Dist: python-pptx
+Requires-Dist: beautifulsoup4
+Requires-Dist: pyMuPDF
+Requires-Dist: pdfplumber
+Requires-Dist: transformers
+Requires-Dist: huggingface-hub
+Requires-Dist: accelerate
+Requires-Dist: safetensors
+Requires-Dist: python-dotenv
+Requires-Dist: requests
