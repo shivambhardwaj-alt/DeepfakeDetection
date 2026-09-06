@@ -1,2 +1,4 @@
 .env
 temp.txt
+*.log
+app/extracted_images
