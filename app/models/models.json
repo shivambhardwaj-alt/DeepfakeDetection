@@ -56,5 +56,17 @@
       "language": ["multilingual"],
       "recommended": false
     }
+  ],
+  "ReasoningModels":
+  [
+    {
+      "name" :"openai/gpt-oss-120b",
+      "work" :"Reasoning",
+      "ClassificationExplainer":"text_classification_explainer",
+      "recommended":"True"
+
+    }
   ]
 }
+
+

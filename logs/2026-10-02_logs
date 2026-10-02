@@ -1,0 +1,92 @@
+2026-10-02 17:10:26 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-02 17:10:26 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 17:10:26 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-02 17:10:26 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:10:26 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:10:26 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:10:26 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:10:26 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:11:43 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-02 17:11:43 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:11:43 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:11:43 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:11:43 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:11:43 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:12:15 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-02 17:12:15 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:12:15 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:12:15 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:12:15 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:12:15 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:12:15 | INFO | __main__ | text_chain_processing.py:57 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 17:12:15 | INFO | __main__ | text_chain_processing.py:57 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 17:12:15 | INFO | __main__ | text_chain_processing.py:57 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 17:12:16 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:12:16 | ERROR | __main__ | text_chain_processing.py:64 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 17:12:16 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:12:16 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:12:16 | ERROR | __main__ | text_chain_processing.py:64 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 17:12:16 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:12:20 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:12:20 | INFO | __main__ | text_chain_processing.py:60 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='AI', score=0.9999281167984009), TextClassificationOutputElement(label='Human', score=7.181908586062491e-05)]
+2026-10-02 17:12:20 | INFO | __main__ | text_chain_processing.py:78 | Scores are >>>> {'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x24b394f9e50 state=finished raised DeepFakeDetectionException>>, 'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x24b394291d0 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x24b394a8050 state=finished returned NoneType>>}
+2026-10-02 17:15:01 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 17:15:01 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-02 17:15:01 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:15:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:15:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:15:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:15:01 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:15:02 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:15:02 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:15:02 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:15:02 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:15:02 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:15:02 | INFO | __main__ | text_chain_processing.py:57 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 17:15:02 | INFO | __main__ | text_chain_processing.py:57 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 17:15:03 | INFO | __main__ | text_chain_processing.py:57 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 17:15:03 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:15:03 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:15:03 | ERROR | __main__ | text_chain_processing.py:65 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 17:15:03 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:15:03 | ERROR | __main__ | text_chain_processing.py:65 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 17:15:03 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:15:08 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:15:08 | INFO | __main__ | text_chain_processing.py:60 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='AI', score=0.9999281167984009), TextClassificationOutputElement(label='Human', score=7.181908586062491e-05)]
+2026-10-02 17:15:08 | INFO | __main__ | text_chain_processing.py:79 | Scores are >>>> {'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x1b450f091d0 state=finished raised DeepFakeDetectionException>>, 'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x1b450fda990 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x1b450f88050 state=finished returned NoneType>>}
+2026-10-02 17:17:00 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 17:17:00 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-02 17:17:00 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:17:00 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:17:00 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:17:00 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:17:00 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:17:01 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-02 17:17:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 17:17:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 17:17:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 17:17:01 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-02 17:17:01 | INFO | __main__ | text_chain_processing.py:57 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 17:17:01 | INFO | __main__ | text_chain_processing.py:57 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 17:17:01 | INFO | __main__ | text_chain_processing.py:57 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 17:17:01 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:17:01 | ERROR | __main__ | text_chain_processing.py:69 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 17:17:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:17:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 17:17:02 | ERROR | __main__ | text_chain_processing.py:69 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 17:17:03 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:17:08 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 17:17:08 | INFO | __main__ | text_chain_processing.py:60 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='AI', score=0.9999281167984009), TextClassificationOutputElement(label='Human', score=7.181908586062491e-05)]
+2026-10-02 17:17:08 | INFO | __main__ | text_chain_processing.py:83 | Scores are >>>> {'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x2032dcd91d0 state=finished raised DeepFakeDetectionException>>, 'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x2032dda9e50 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x2032dd58050 state=finished returned NoneType>>}

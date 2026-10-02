@@ -1,0 +1,270 @@
+2026-10-01 14:28:47 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=3 socket_options=None
+2026-10-01 14:28:47 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002488DC78050>
+2026-10-01 14:28:47 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000002488DC436B0> server_hostname='huggingface.co' timeout=3
+2026-10-01 14:28:48 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002488DB2F110>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 08:58:51 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"1576-P6io7QC3jFOB3QM4BbGHzDy+4To"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe20cb-1f380e9d4d2cabed6bf4643d;ce47478b-2b06-4e62-b275-481c4adb6c8f'), (b'RateLimit', b'"api";r=496;t=110'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9299384474533cd20eaeadee95275d48.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'ZW2Zr1TKfNNaC3dozIDoWp8xd2fVr1e09Mi977kLwzJjYPLU1EfXVw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:28:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'436'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 08:58:52 GMT'), (b'ETag', b'W/"1b4-t+eitctfNZzcRmrVd6lXO5hQnPQ"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe20cc-72cfb89138f6efff305fb377;8a6361f7-1179-45a4-9d73-42dd463a4edd'), (b'RateLimit', b'"api";r=999;t=160'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9299384474533cd20eaeadee95275d48.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'dm9p0ojkCVA9CERxYU_6evlSBkP8O7UfxKGdyPS72RBtQAZlPP1dMg=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:28:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:28:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:28:48 | INFO | __main__ | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-01 14:28:48 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:28:48 | INFO | __main__ | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:28:48 | INFO | __main__ | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:28:48 | INFO | __main__ | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:28:48 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:28:48 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:28:48 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 14:47:58 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-01 14:47:58 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002067A0401A0>
+2026-10-01 14:47:58 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000002067A007D90> server_hostname='huggingface.co' timeout=None
+2026-10-01 14:47:59 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020679EEEFD0>
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'436'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:18:02 GMT'), (b'ETag', b'W/"1b4-t+eitctfNZzcRmrVd6lXO5hQnPQ"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe254a-186d07321ff1e29c4285225f;67e2f596-3182-4eb4-8228-d35ac1f3e969'), (b'RateLimit', b'"api";r=999;t=210'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 a859d238e65239c13aa9308153ec3b8c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'zMvM8s7GMMucMlqKqt8CxzTe1jMqe4i3YUZnPmxUOpLZwBXbPJWQDg=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:47:59 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:47:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-01 14:47:59 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:47:59 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:47:59 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:47:59 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:47:59 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:47:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:47:59 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:47:59 | ERROR | __main__ | text_chain_processing.py:37 | Model failed name : fakespot-ai/roberta-base-ai-text-detection-v1  
+2026-10-01 14:47:59 | ERROR | __main__ | text_chain_processing.py:37 | Model failed name : Oxidane/tmr-ai-text-detector  
+2026-10-01 14:47:59 | ERROR | __main__ | text_chain_processing.py:37 | Model failed name : adaptive-classifier/ai-detector  
+2026-10-01 14:47:59 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:47:59 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 14:49:47 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-01 14:49:48 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B8D30201A0>
+2026-10-01 14:49:48 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x000001B8D2FE7ED0> server_hostname='huggingface.co' timeout=None
+2026-10-01 14:49:48 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001B8D2ECEFD0>
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'436'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:19:51 GMT'), (b'ETag', b'W/"1b4-t+eitctfNZzcRmrVd6lXO5hQnPQ"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe25b7-16a2bd605c44c11e65befdef;01423bf7-b077-42b1-b30c-f4e51ec53ee1'), (b'RateLimit', b'"api";r=998;t=101'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 4702f45f243df5e52aa0aa1a82a88dc4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'g6eeVx05MSBKSmMLcaQtkSwZxQcjYiSSp-eBFNvipLINfa5X5-jLZw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:49:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:49:48 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-01 14:49:48 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:49:48 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:49:48 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:49:48 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:49:48 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:44 | [fakespot-ai/roberta-base-ai-text-detection-v1] failed: AttributeError: 'InferenceClient' object has no attribute 'invoke'
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:56 | Model failed: fakespot-ai/roberta-base-ai-text-detection-v1 | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'fakespot-ai/roberta-base-ai-text-detection-v1' failed: 'InferenceClient' object has no attribute 'invoke'
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 30
+Original   : None
+
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:44 | [Oxidane/tmr-ai-text-detector] failed: AttributeError: 'InferenceClient' object has no attribute 'invoke'
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:56 | Model failed: Oxidane/tmr-ai-text-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'Oxidane/tmr-ai-text-detector' failed: 'InferenceClient' object has no attribute 'invoke'
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 30
+Original   : None
+
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:44 | [adaptive-classifier/ai-detector] failed: AttributeError: 'InferenceClient' object has no attribute 'invoke'
+2026-10-01 14:49:48 | ERROR | __main__ | text_chain_processing.py:56 | Model failed: adaptive-classifier/ai-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'adaptive-classifier/ai-detector' failed: 'InferenceClient' object has no attribute 'invoke'
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 30
+Original   : None
+
+2026-10-01 14:49:48 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:49:48 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 14:53:58 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-01 14:53:58 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E9957C1A0>
+2026-10-01 14:53:58 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000019E99547E30> server_hostname='huggingface.co' timeout=None
+2026-10-01 14:53:58 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E9942EFD0>
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'436'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:02 GMT'), (b'ETag', b'W/"1b4-t+eitctfNZzcRmrVd6lXO5hQnPQ"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe26b2-3e3b30ae46cb531926759c76;f3dea70d-b207-4921-b54d-7338812dc77f'), (b'RateLimit', b'"api";r=999;t=150'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9c3cf0c4174b28309295a7895022707e.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'A06LXfq1vYl-PG6yciQJMxVaf4YTyQaS0kEinUqkUxTkknzS7TWgDw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:53:58 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:53:58 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:53:58 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-01 14:53:58 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:53:59 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:53:59 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 14:53:59 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 14:53:59 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'261'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:02 GMT'), (b'ETag', b'W/"105-HVeY5OXrwKjTdwHQOCc9zulJUPE"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe26b2-4e621f2d00acea7b46dc23cb;f095ee9f-f876-4708-b20f-9ce60a52ace2'), (b'RateLimit', b'"api";r=998;t=150'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9c3cf0c4174b28309295a7895022707e.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'vP90PQF290gGuVeRV7rVp3Mfb36kp_nsUS72UmceWn7dN1_wQdBE3Q=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:53:59 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:03 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"941-fvF6os1N6i2M7f+SdgMDVFFrDl8"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe26b3-17ab3e9f679495280eacac21;885de717-08c7-4899-a55f-a035fdb535e2'), (b'RateLimit', b'"api";r=997;t=149'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9c3cf0c4174b28309295a7895022707e.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'zIPkUzqXFTV9hs3KXact5NTMRHMUo-mj5Ug4I88FcVCBkSRmafuA_g=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:53:59 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='router.huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-01 14:53:59 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E9958E5D0>
+2026-10-01 14:53:59 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000019E99547E30> server_hostname='router.huggingface.co' timeout=None
+2026-10-01 14:53:59 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E998D1220>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'POST']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'POST']>
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:53:59 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'POST']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json'), (b'Content-Length', b'90'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:13 GMT'), (b'x-inference-provider', b'hf-inference'), (b'X-Powered-By', b'huggingface-moon'), (b'x-request-id', b'Root=1-6abe26b3-7b2fe82f7750e03b4392573b;82367641-5ddf-4387-b23e-77d396deade5'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'vary', b'origin, access-control-request-method, access-control-request-headers, origin, access-control-request-method, access-control-request-headers'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Robots-Tag', b'none'), (b'access-control-allow-credentials', b'true'), (b'server', b'uvicorn'), (b'x-inference-id', b'5dd7be15-4cca-4420-ad12-67a1b2a026b1'), (b'x-proxied-host', b'http://10.109.79.129'), (b'x-proxied-path', b'/'), (b'x-proxied-replica', b'fyrcsfje-cb92csqkd'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 9b8589e438e70ef5bf813033079116ec.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P5'), (b'X-Amz-Cf-Id', b'bLG3ZadgmckiABSG9W9LXK6yGcMB3O0fN-SLmzDa-hGDeNNZ1fkgfw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:54:10 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'POST']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 14:54:10 | INFO | __main__ | text_chain_processing.py:31 | [fakespot-ai/roberta-base-ai-text-detection-v1] raw output: [TextClassificationOutputElement(label='Human', score=0.9425951838493347), TextClassificationOutputElement(label='AI', score=0.0574047677218914)]
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E998D23F0>
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000019E99547E30> server_hostname='huggingface.co' timeout=None
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019E9947E450>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'100'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:14 GMT'), (b'ETag', b'W/"64-A72ulPSXckb7iC6bV2+IT6HrS0E"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe26be-31cd052e4ab0c07b71f03deb;9d9b35e4-8a38-40b8-bb29-01cd8a1e6636'), (b'RateLimit', b'"api";r=996;t=138'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 de32ab3babd1c6112f028293699af626.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'uCQ8PfovzybzjQS1FCrh5AEvauMPnMJP3HJiELL1dK79HdXo0meyZg=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:54:10 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:54:10 | ERROR | __main__ | text_chain_processing.py:45 | [Oxidane/tmr-ai-text-detector] failed: StopIteration: 
+2026-10-01 14:54:10 | ERROR | __main__ | text_chain_processing.py:57 | Model failed: Oxidane/tmr-ai-text-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'Oxidane/tmr-ai-text-detector' failed: 
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 30
+Original   : None
+
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_headers.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | send_request_body.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'103'), (b'Connection', b'keep-alive'), (b'Date', b'Thu, 01 Oct 2026 09:24:14 GMT'), (b'ETag', b'W/"67-+Q1hm/fkUxpNiwjDkJRyU2Mgpmk"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6abe26be-50fcd35714a144ff50dc8b42;bcd93078-7250-45f3-b524-186f98b6a855'), (b'RateLimit', b'"api";r=995;t=138'), (b'RateLimit-Policy', b'"fixed window";"api";q=1000;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 de32ab3babd1c6112f028293699af626.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'pw2m1Sr4y0dCy9xJynzuIIa3vbCt4BkCQVO3v-OU57GPskE_XQM73A=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-01 14:54:10 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.started request=<Request [b'GET']>
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | receive_response_body.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.started
+2026-10-01 14:54:10 | DEBUG | httpcore.http11 | _trace.py:47 | response_closed.complete
+2026-10-01 14:54:10 | ERROR | __main__ | text_chain_processing.py:45 | [adaptive-classifier/ai-detector] failed: StopIteration: 
+2026-10-01 14:54:10 | ERROR | __main__ | text_chain_processing.py:57 | Model failed: adaptive-classifier/ai-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'adaptive-classifier/ai-detector' failed: 
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 30
+Original   : None
+
+2026-10-01 14:54:10 | INFO | __main__ | text_chain_processing.py:62 | Scores: {'fakespot-ai/roberta-base-ai-text-detection-v1': 0.0574047677218914}
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.started
+2026-10-01 14:54:10 | DEBUG | httpcore.connection | _trace.py:47 | close.complete
+2026-10-01 15:35:58 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-01 15:35:58 | INFO | app.models.config_models | config_models.py:24 | Successfully authenticated with Hugging Face
+2026-10-01 15:35:58 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 15:35:58 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 15:35:58 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 15:35:58 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 15:35:58 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 15:36:01 | INFO | root | config_models.py:39 | Models successfully fetched from json file
+2026-10-01 15:36:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-01 15:36:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-01 15:36:01 | INFO | app.models.config_models | config_models.py:48 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-01 15:36:01 | INFO | root | config_models.py:52 | Created clients successfully
+2026-10-01 15:36:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 15:36:02 | ERROR | __main__ | text_chain_processing.py:89 | [adaptive-classifier/ai-detector] failed: StopIteration: 
+2026-10-01 15:36:02 | ERROR | __main__ | text_chain_processing.py:105 | Model failed: adaptive-classifier/ai-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'adaptive-classifier/ai-detector' failed: 
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 67
+Original   : None
+
+2026-10-01 15:36:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 15:36:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-01 15:36:02 | ERROR | __main__ | text_chain_processing.py:89 | [Oxidane/tmr-ai-text-detector] failed: StopIteration: 
+2026-10-01 15:36:02 | ERROR | __main__ | text_chain_processing.py:105 | Model failed: Oxidane/tmr-ai-text-detector | 
+Error Code : DEEP_FAKE_DETECTION
+Message    : Model 'Oxidane/tmr-ai-text-detector' failed: 
+File       : C:\Users\dell\OneDrive\Documents\LangChain\DeepfakeDetection\app\processors\text_chain_processing.py
+Line       : 67
+Original   : None
+
+2026-10-01 15:36:02 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-01 15:36:08 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-01 15:36:08 | INFO | __main__ | text_chain_processing.py:68 | [fakespot-ai/roberta-base-ai-text-detection-v1] raw output: [TextClassificationOutputElement(label='AI', score=0.9999281167984009), TextClassificationOutputElement(label='Human', score=7.181908586062491e-05)]
+2026-10-01 15:36:08 | INFO | __main__ | text_chain_processing.py:110 | Scores: {'fakespot-ai/roberta-base-ai-text-detection-v1': 0.9999281167984009}
