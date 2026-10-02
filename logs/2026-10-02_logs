@@ -90,3 +90,152 @@
 2026-10-02 17:17:08 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
 2026-10-02 17:17:08 | INFO | __main__ | text_chain_processing.py:60 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='AI', score=0.9999281167984009), TextClassificationOutputElement(label='Human', score=7.181908586062491e-05)]
 2026-10-02 17:17:08 | INFO | __main__ | text_chain_processing.py:83 | Scores are >>>> {'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x2032dcd91d0 state=finished raised DeepFakeDetectionException>>, 'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x2032dda9e50 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x2032dd58050 state=finished returned NoneType>>}
+2026-10-02 18:23:53 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:23:53 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:23:53 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:23:53 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:23:53 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:23:53 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:23:53 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:23:53 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:25:29 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:25:29 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:25:30 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:25:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:25:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:25:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:25:30 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:25:30 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:25:31 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:25:32 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-02 18:32:40 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:32:40 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:32:40 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:32:40 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:32:40 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:32:40 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:32:40 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:32:40 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:32:42 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:34:01 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:34:01 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:34:01 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:34:01 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:34:01 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:34:01 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:34:01 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:34:01 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:34:02 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:35:15 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:35:15 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:35:16 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:35:16 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:35:16 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:35:16 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:35:16 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:35:16 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:35:17 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:36:30 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:36:30 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:36:30 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:36:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:36:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:36:30 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:36:30 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:36:30 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:36:32 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:44:32 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:44:32 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:44:32 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:44:32 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:44:32 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:44:32 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:44:32 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:44:32 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:44:34 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:44:36 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-02 18:44:36 | INFO | __main__ | text_chain_processing.py:134 | finally got the result in the structured format :evidence=['"It is important to note that artificial intelligence plays a crucial role in modern society."', '"Furthermore, it offers numerous benefits across various industries, including healthcare, finance, and education."', '"In conclusion, the impact of AI cannot be overstated."'] reason='The passage uses generic, hedged phrasing, a formulaic intro-body-conclusion structure, and lacks personal detail, all typical AI signals, outweighing the minor typo.' score=0.78 verdict='likely_ai'
+2026-10-02 18:54:39 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:54:39 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:54:55 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:54:55 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:55:20 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:55:20 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:55:20 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:55:20 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:55:20 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:55:20 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:55:20 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:55:20 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 18:55:20 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 18:55:20 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 18:55:20 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:55:20 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 18:55:20 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:55:20 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:55:20 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 18:55:21 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:55:26 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:55:26 | INFO | app.processors.text_chain_processing | text_chain_processing.py:61 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='Human', score=0.9908164739608765), TextClassificationOutputElement(label='AI', score=0.009183574467897415)]
+2026-10-02 18:55:26 | INFO | app.processors.text_chain_processing | text_chain_processing.py:93 | Scores are >>>> {'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x23649736c10 state=finished raised DeepFakeDetectionException>>, 'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x23649736710 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x236496db8c0 state=finished returned float>>}
+2026-10-02 18:55:26 | INFO | __main__ | textProcessingChain.py:15 | Found the Confidence Score here : {'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x23649736c10 state=finished raised DeepFakeDetectionException>>, 'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x23649736710 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x236496db8c0 state=finished returned float>>}
+2026-10-02 18:55:26 | INFO | __main__ | textProcessingChain.py:17 | Explainer is ON ..
+2026-10-02 18:55:26 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:55:27 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:55:29 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-02 18:55:29 | INFO | app.processors.text_chain_processing | text_chain_processing.py:134 | finally got the result in the structured format :evidence=['"Hi this is shivam Bhardwaj"', '"{\'adaptive-classifier/ai-detector\': <bound method Future.result'] reason='The text includes a specific personal name and a concrete reference to a debugging output, which are typical of human-generated content and not generic AI phrasing.' score=0.78 verdict='likely_human'
+2026-10-02 18:55:29 | INFO | __main__ | textProcessingChain.py:19 | Found the final _result here...
+2026-10-02 18:56:53 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:56:53 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:56:54 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:56:54 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:56:54 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:56:54 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:56:54 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:56:54 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 18:56:54 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 18:56:54 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 18:56:54 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:56:54 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 18:56:54 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:56:54 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 18:56:54 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:56:54 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:56:58 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:56:58 | INFO | app.processors.text_chain_processing | text_chain_processing.py:61 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='Human', score=0.9908164739608765), TextClassificationOutputElement(label='AI', score=0.009183574467897415)]
+2026-10-02 18:56:58 | INFO | app.processors.text_chain_processing | text_chain_processing.py:93 | Scores are >>>> {'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x1dbd7df6710 state=finished raised DeepFakeDetectionException>>, 'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x1dbd7df6d50 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x1dbd7d9f8c0 state=finished returned float>>}
+2026-10-02 18:56:58 | INFO | __main__ | textProcessingChain.py:15 | Found the Confidence Score here : {'Oxidane/tmr-ai-text-detector': <bound method Future.result of <Future at 0x1dbd7df6710 state=finished raised DeepFakeDetectionException>>, 'adaptive-classifier/ai-detector': <bound method Future.result of <Future at 0x1dbd7df6d50 state=finished raised DeepFakeDetectionException>>, 'fakespot-ai/roberta-base-ai-text-detection-v1': <bound method Future.result of <Future at 0x1dbd7d9f8c0 state=finished returned float>>}
+2026-10-02 18:56:58 | INFO | __main__ | textProcessingChain.py:17 | Explainer is ON ..
+2026-10-02 18:56:58 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:56:59 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:57:00 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-02 18:57:00 | INFO | app.processors.text_chain_processing | text_chain_processing.py:134 | finally got the result in the structured format :evidence=['"Hi this is shivam Bhardwaj"', '"{\'Oxidane/tmr-ai-text-detector\': <bound method Future.result'] reason='The text contains a personal name and informal greeting, which are typical of human-generated content. The short length provides weak evidence overall, so the assessment remains uncertain but leans toward human.' score=0.4 verdict='likely_human'
+2026-10-02 18:57:00 | INFO | __main__ | textProcessingChain.py:19 | Found the final _result here...
+2026-10-02 18:58:47 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/whoami-v2 "HTTP/1.1 200 OK"
+2026-10-02 18:58:47 | INFO | app.models.config_models | config_models.py:35 | Successfully authenticated with Hugging Face
+2026-10-02 18:58:47 | INFO | root | config_models.py:50 | Models successfully fetched from json file
+2026-10-02 18:58:47 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: fakespot-ai/roberta-base-ai-text-detection-v1
+2026-10-02 18:58:47 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: Oxidane/tmr-ai-text-detector
+2026-10-02 18:58:47 | INFO | app.models.config_models | config_models.py:59 | Created Hugging Face client for: adaptive-classifier/ai-detector
+2026-10-02 18:58:47 | INFO | root | config_models.py:63 | Created clients successfully
+2026-10-02 18:58:47 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result fakespot-ai/roberta-base-ai-text-detection-v1 model... 
+2026-10-02 18:58:47 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result Oxidane/tmr-ai-text-detector model... 
+2026-10-02 18:58:47 | INFO | app.processors.text_chain_processing | text_chain_processing.py:58 | Getting the result adaptive-classifier/ai-detector model... 
+2026-10-02 18:58:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/adaptive-classifier/ai-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:58:48 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name adaptive-classifier/ai-detector  is not working got error
+2026-10-02 18:58:48 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:92 | Model adaptive-classifier/ai-detector failed to give output here...
+2026-10-02 18:58:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/Oxidane/tmr-ai-text-detector?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:58:48 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:79 | Model name Oxidane/tmr-ai-text-detector  is not working got error
+2026-10-02 18:58:48 | ERROR | app.processors.text_chain_processing | text_chain_processing.py:92 | Model Oxidane/tmr-ai-text-detector failed to give output here...
+2026-10-02 18:58:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-10-02 18:58:48 | INFO | httpx | _client.py:1025 | HTTP Request: GET https://huggingface.co/api/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:58:52 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://router.huggingface.co/hf-inference/models/fakespot-ai/roberta-base-ai-text-detection-v1 "HTTP/1.1 200 OK"
+2026-10-02 18:58:52 | INFO | app.processors.text_chain_processing | text_chain_processing.py:61 | f[fakespot-ai/roberta-base-ai-text-detection-v1]  raw output : [TextClassificationOutputElement(label='Human', score=0.9908164739608765), TextClassificationOutputElement(label='AI', score=0.009183574467897415)]
+2026-10-02 18:58:52 | INFO | app.processors.text_chain_processing | text_chain_processing.py:93 | Scores are >>>> {'fakespot-ai/roberta-base-ai-text-detection-v1': 0.009183574467897415}
+2026-10-02 18:58:52 | INFO | __main__ | textProcessingChain.py:15 | Found the Confidence Score here : {'fakespot-ai/roberta-base-ai-text-detection-v1': 0.009183574467897415}
+2026-10-02 18:58:52 | INFO | __main__ | textProcessingChain.py:17 | Explainer is ON ..
+2026-10-02 18:58:52 | INFO | app.models.config_models | config_models.py:80 | Model which is going to use in reasoning info : [{'name': 'openai/gpt-oss-120b', 'work': 'Reasoning', 'ClassificationExplainer': 'text_classification_explainer', 'recommended': 'True'}]
+2026-10-02 18:58:53 | INFO | app.models.config_models | config_models.py:88 | Creation of reasoning llm has been succesful here
+2026-10-02 18:58:55 | INFO | httpx | _client.py:1025 | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-02 18:58:55 | INFO | app.processors.text_chain_processing | text_chain_processing.py:134 | finally got the result in the structured format :evidence=['"Hi this is shivam Bhardwaj"', '"Data for the reasoing is"'] reason='The text includes a personal name and an informal greeting, which are typical human signals, and its brevity provides weak evidence overall.' score=0.38 verdict='likely_human'
+2026-10-02 18:58:55 | INFO | __main__ | textProcessingChain.py:19 | Found the final _result here...

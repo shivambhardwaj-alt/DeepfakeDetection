@@ -36,5 +36,5 @@ SYSTEM = """You are a forensic analyst estimating whether a text is AI-generated
 
 text_prompt =  ChatPromptTemplate.from_messages([
     ("system" , SYSTEM),
-    ("human" , "<text>\n {data} \n</text>")
+    ("human" , "<text>\n Data for the reasoing is : {data} \n And now the scoring and some verification is : {score} \n</text>")
 ])

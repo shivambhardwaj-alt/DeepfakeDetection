@@ -9,6 +9,7 @@ from app.prompts.textProcessingPrompt import text_prompt , Verdict
 from utility.Exception import DeepFakeDetectionException as DFDException 
 from utility.logger import setup_logger
 from typing import List, Dict, Optional , Any 
+from app.models.config_models import ReasoningModel
 logger = logging.getLogger(__name__)
 
 
@@ -86,7 +87,7 @@ class TextProcessing:
             for fut in as_completed(futures):
                 name = futures[fut]
                 try :
-                    scores[name]  = fut.result 
+                    scores[name]  = fut.result() 
                 except Exception as e : 
                     logger.error(f"Model {name} failed to give output here...")
             logger.info(f"Scores are >>>> {scores}")
@@ -97,7 +98,7 @@ class TextProcessing:
         words  = re.findall(r"\b[\w']+\b", data)
         lengths = [len(re.findall(r"\b[\w']+\b", s)) for s in sentences] or [0]
         lowered = data.lower()
-        ai_hits = List[str] = []
+        ai_hits : List[str] = []
         for phrase in AI_PHRASES:
             idx = lowered.find(phrase)
             if idx != -1:
@@ -117,17 +118,23 @@ class TextProcessing:
             "informal": bool(re.search(r"(!{1,}|\.{3}|\b(lol|haha|btw|idk|tbh|gonna|wanna)\b)", data, re.I)),
         }
     def _rule_based_explain(self, data : str, score) :
-        pass
-         
-
+        """ This method will explain here on the basis of result after getting confidence score and everything """
+        try :
+            reasoning = ReasoningModel()
+            llm  = reasoning.reasoning_llm
+            resultForSignals = self._text_signals(data)
+          
+            prompt = text_prompt.invoke({
+                "data" : data , 
+                "score" : score
+            })
             
-if __name__ == "__main__":
-    tp = TextProcessing()
-    sample = (
-        "It is important to note that artificial intelligence plays a crucial role "
-        "in modern society. Furthermore, it offers numerous benefits across various "
-        "industries, including healthcare, finance, and education. In conclusion, "
-        "the impact of AI cannot be overstated."
-    )
-    tp.findConfidenceScore(sample)
+            structured_llm = llm.with_structured_output(Verdict)
+            final_result = structured_llm.invoke(prompt)
+            logger.info(f"finally got the result in the structured format :{final_result}")      
+            return final_result 
+            
+        except: 
+            raise DFDException("Failed in the process of making reasoning with reasoning model")
+
     
