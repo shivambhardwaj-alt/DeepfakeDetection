@@ -48,11 +48,6 @@ class TextProcessing:
         self.max_workers =  max_workers
         self.useExplainer = useExplainer 
         self.chat_client = None 
-        if useExplainer :
-            try: 
-                pass 
-            except :
-                raise DFDException("Failed to useExplainer model here")
     def singleModelScore(self, name : str , data : str):
         try : 
             logger.info(f"Getting the result {name} model... ")

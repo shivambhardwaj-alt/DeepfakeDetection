@@ -17,7 +17,11 @@ transformers
 huggingface-hub
 accelerate
 safetensors
-
+sqlmodel 
+uvicorn
+sqlmodel
+pyjwt
+asyncpg 
 python-dotenv
 langchain-groq
 requests

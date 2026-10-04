@@ -3,6 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 from huggingface_hub import login
 import json
+from typing import List
 import os
 from utility.logger import setup_logger
 from huggingface_hub import InferenceClient
@@ -94,5 +95,48 @@ class ReasoningModel:
 
         
             
+            
+
+class ImageProcessingModels:
+    """This will give all models of Images in a list and clients are being provided in Images processing """
+    def __init__(self):
+        self.images_processing_models : List[str] = self.get_video_models()
+        self.images_processing_clients  = self.get_video_clients()
+    def get_video_models(self) -> List[str]:
+        try:
+            logger.info("Starting to load the image models here .....")
+            base_dir  = Path(__file__).resolve().parent
+            model_file = f'{base_dir}/models.json'
+            res : List[str] = []
+            with open(model_file, "r" , encoding =  "utf-8") as file : 
+                data = json.load(file)
+                if not data : 
+                    logger.info("No data has been found file")
+                models = data["ImageProcessingModels"]
+                for obj in models:
+                    res.append(obj["name"])
+                    logger.debug(f"Loading current models is : {obj}")
+            logger.info("Loading of the images processing models has been completed and now ready to use ...")                
+            return res                        
+        except FileNotFoundError as e : 
+            raise DFDException(f'File is not found with this {model_file}  path') from e 
+        except json.JSONDecodeError as e : 
+            raise DFDException(f'Model Config is not valid json here ..') from e 
+        except OSError as e :
+            raise DFDException(f'Could not read model config {e}') from e 
+        except:
+            raise DFDException("[Error]: Can't load the video_models here..")
+    def get_video_clients(self):
+        try :
+            logger.info("Starting to make clients for the Image processing models for the deepfake detection..")
+            clients = {}
+            for model in self.images_processing_models:
+                clients[model] = InferenceClient(model = model)
+                if not clients:
+                    logger.debug(f'Getting client for  this models is failed here .. {model}')
+            logger.info("Getting models has been successful here...")
+            return clients
+        except Exception as e :
+            raise DFDException(f"Failed to make the clients for the Image processing models here .. => {e} ")
             
 

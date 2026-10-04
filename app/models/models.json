@@ -66,7 +66,23 @@
       "recommended":"True"
 
     }
+  ] , 
+
+  "ImageProcessingModels": [
+    {
+      "name" : "prithivMLmods/deepfake-detector-model-v1",
+      "work":"Image Deepfake Detection ",
+      "ClassificationExplainer" :"ViT fine-tuned on the OpenDeepfake-Preview dataset, Apache 2.0",
+      "recommended" :"True"
+    },
+    {
+      "name" :"onnx-community/CommunityForensics-DeepfakeDet-ViT-ONNX",
+      "work" :"Image Deepfake Detection",
+      "ClassificationExplainer" :"ViT trained on what its authors call the largest dataset to date for detecting AI-generated images",
+      "recommended" :"True"
+    }
   ]
+
 }
 
 

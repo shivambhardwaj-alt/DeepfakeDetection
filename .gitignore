@@ -2,3 +2,5 @@
 temp.txt
 *.log
 app/extracted_images
+__pycache__/
+*.py[cod]
